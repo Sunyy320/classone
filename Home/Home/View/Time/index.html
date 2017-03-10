@@ -1,0 +1,109 @@
+<section id="cd-timeline" class="cd-container">
+
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+            <img src="__PUBLIC__/Images/cd-icon-picture.svg" alt="Picture">
+        </div>
+
+        <div class="cd-timeline-content">
+            <h2>happy的团活</h2>
+            <div>
+                <img src="__PUBLIC__/Images/class5.jpg"  style="margin-right:5px;" onload="AutoResizeImage(300,300,this)"/>
+                <p>团活是一次班级聚会，也是一次加深同学之间感情的机会。记得与你们玩过的每一个游戏，开过的每一个笑话</p>
+            </div>
+
+            <span class="cd-date">2015-01-06</span>
+        </div>
+    </div>
+
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-movie">
+
+            <img src="__PUBLIC__/Images/cd-icon-picture.svg" alt="Picture">
+        </div>
+
+        <div class="cd-timeline-content">
+            <h2>男生的活动练习</h2>
+            <div>
+                <img src="__PUBLIC__/Images/class2.jpg" align="left" style="margin-right:5px;" onload="AutoResizeImage(200,200,this)"/>
+                <p>四年的兄弟情，岂是困难可以打倒！无论前方遇见什么，我们都会相互搀扶前进，不抛弃，不放弃</p>
+            </div>
+            <span class="cd-date">2014-12-25</span>
+        </div>
+    </div>
+
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+            <img src="__PUBLIC__/Images/cd-icon-picture.svg" alt="Picture">
+        </div>
+
+        <div class="cd-timeline-content">
+            <h2>意义非凡的班会</h2>
+            <div>
+                <img src="__PUBLIC__/Images/class3.jpg" align="left" style="margin-right:5px;" onload="AutoResizeImage(200,200,this)"/>
+                <p> 每一次的班会，都是鞭策在鞭策自己不要沉迷于舒适的生活，别忘记奋斗的意义。在这里知道差距的所在，知道奋斗的方向</p>
+            </div>
+            <span class="cd-date">2014-12-20</span>
+        </div>
+    </div>
+
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-movie">
+            <img src="__PUBLIC__/Images/cd-icon-picture.svg" alt="Picture">
+        </div>
+
+        <div class="cd-timeline-content">
+            <h2>Sports Meeting年级活动</h2>
+            <div>
+                <img src="__PUBLIC__/Images/class4.jpg" align="left" style="margin-right:5px;" onload="AutoResizeImage(200,200,this)"/>
+                <p> 班级集体活动，挥洒着汗水，留下欢笑和记忆，当然还有我们间不变的情谊！</p>
+            </div>
+            <span class="cd-date">2014-12-14</span>
+        </div>
+    </div>
+
+    <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-movie">
+            <img src="__PUBLIC__/Images/cd-icon-picture.svg" alt="Picture">
+        </div>
+
+        <div class="cd-timeline-content">
+            <h2>Sports Meeting年级活动</h2>
+            <div>
+                <img src="__PUBLIC__/Images/class4.jpg" align="left" style="margin-right:5px;" onload="AutoResizeImage(200,200,this)"/>
+                <p> 班级集体活动，挥洒着汗水，留下欢笑和记忆，当然还有我们间不变的情谊！</p>
+            </div>
+            <span class="cd-date">2014-12-14</span>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    function AutoResizeImage(maxWidth,maxHeight,objImg){
+
+        var img = new Image();
+        img.src = objImg.src;
+        var hRatio;
+        var wRatio;
+        var Ratio = 1;
+        var w = img.width;
+        var h = img.height;
+        wRatio = maxWidth / w;
+        hRatio = maxHeight / h;
+        if (maxWidth ==0 && maxHeight==0){
+            Ratio = 1;
+        }else if (maxWidth==0){
+            if (hRatio<1) Ratio = hRatio;
+        }else if (maxHeight==0){
+            if (wRatio<1) Ratio = wRatio;
+        }else if (wRatio<1 || hRatio<1){
+            Ratio = (wRatio<=hRatio?wRatio:hRatio);
+        }
+        if (Ratio<1){
+            w = w * Ratio;
+            h = h * Ratio;
+        }
+        objImg.height = h;
+        objImg.width = w;
+    }
+</script>

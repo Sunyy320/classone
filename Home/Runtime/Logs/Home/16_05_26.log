@@ -1,0 +1,5 @@
+[ 2016-05-26T11:10:25+08:00 ] 127.0.0.1 /classone/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.041000s ]
+
